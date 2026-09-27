@@ -1,0 +1,33 @@
+{
+  "name": "genpark-semver-breaking-change-auditor-skill",
+  "version": "1.0.0",
+  "description": "Semantic versioning (SemVer 2.0) breaking change auditor inspecting AST public API surface diffs, parameter reordering, and removed exports.",
+  "category": "Service",
+  "author": "AlphaPark",
+  "tags": [
+    "semver",
+    "breaking-changes",
+    "api-diff",
+    "ast-audit",
+    "zero-dependency",
+    "mcp"
+  ],
+  "tools": [
+    {
+      "name": "extract_public_api_surface",
+      "description": "Extract function signatures and class definitions from source code."
+    },
+    {
+      "name": "diff_api_surfaces",
+      "description": "Compare old vs new API surface to detect breaking changes."
+    },
+    {
+      "name": "recommend_semver_bump",
+      "description": "Determine whether PATCH, MINOR, or MAJOR version bump is required."
+    },
+    {
+      "name": "run_benchmark_semver_audit",
+      "description": "Execute SemVer API breaking change test cases."
+    }
+  ]
+}
